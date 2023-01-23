@@ -1,6 +1,6 @@
 {
   "name": "jsxlib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An Advance JS",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -20,7 +20,9 @@
     "url": "git+https://github.com/jsxutils/jsxlib.git"
   },
   "keywords": [
-    "jsxutils", "jsxlib", "Advance js"
+    "jsxutils",
+    "jsxlib",
+    "Advance js"
   ],
   "author": "Mohit Kumar",
   "license": "ISC",
