@@ -1,6 +1,7 @@
 declare global {
   interface Array<T> {
-    sum(): number;
+    jSum(): number;
+    jChunk(chunkSize?: number): any[];
   }
 }
 const sum = (arr: any[]) => {
@@ -10,7 +11,18 @@ const sum = (arr: any[]) => {
   });
   return obj;
 };
-Array.prototype.sum = function () {
+const chunk = (array: any[], chunkSize: number) => {
+  const chunked: any[] = [];
+  for (let i = 0; i < array.length; i += chunkSize) {
+    const chunk = array.slice(i, i + chunkSize);
+    chunked.push(chunk);
+  }
+  return chunked;
+};
+Array.prototype.jSum = function () {
   return sum(this);
 };
-export const getGreet = (name: string) => `Hello ${name}`;
+Array.prototype.jChunk = function (chunkSize: number) {
+  return chunk(this, chunkSize);
+};
+export const jsxlib = {};
