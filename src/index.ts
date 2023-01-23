@@ -12,12 +12,12 @@ const sum = (arr: any[]) => {
   return obj;
 };
 const chunk = (array: any[], chunkSize: number) => {
-  const chunked: any[] = [];
+  const chunks: any[] = [];
   for (let i = 0; i < array.length; i += chunkSize) {
-    const chunk = array.slice(i, i + chunkSize);
-    chunked.push(chunk);
+    const chunked = array.slice(i, i + chunkSize);
+    chunks.push(chunked);
   }
-  return chunked;
+  return chunks;
 };
 Array.prototype.jSum = function () {
   return sum(this);
