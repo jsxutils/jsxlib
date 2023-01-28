@@ -1,5 +1,4 @@
-/// <reference  path="./array/types.ts" />
-
+export * from './array/types';
 import * as array from './array';
 
 const js = {
@@ -7,5 +6,6 @@ const js = {
         array;
     },
 };
+export const jsxlib = '1.x.x';
 export const version = '1.x.x';
 export default js;

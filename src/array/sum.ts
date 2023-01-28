@@ -1,4 +1,4 @@
-class jSum {
+class JSum {
     constructor() {
         Array.prototype.jSum = function () {
             let obj: any = 0;
@@ -9,4 +9,4 @@ class jSum {
         };
     }
 }
-export const sum = new jSum();
+export const sum = new JSum();
