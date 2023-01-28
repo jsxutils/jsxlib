@@ -1,6 +1,6 @@
 {
   "name": "jsxlib",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "An Advance JS",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
