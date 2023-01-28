@@ -1,8 +1,8 @@
-import { init } from '../index';
+import js from '../index';
 describe('jsxlib', () => {
     const logSpy = jest.spyOn(console, 'log');
     test('init', () => {
-        var x = init();
+        var x = js.load();
         expect(x).toBe(undefined);
     });
     test('Array -> Sum', () => {
