@@ -6,7 +6,8 @@
     "outDir": "./lib",
     "strict": true,
     "removeComments": true,
-    "noResolve": true
+    "noResolve": true,
+    "skipLibCheck": true
   },
   "include": ["src"],
   "exclude": ["node_modules", "**/__tests__/*"]
